@@ -46,7 +46,7 @@ const AddUser = () => {
 
         setFirstName("");
         setLastName("");
-        setTelephoneNumber();
+        setTelephoneNumber("");
         setAdderess("");
         setCompany("");
       } catch (error) {
@@ -121,10 +121,10 @@ const AddUser = () => {
             required
             value={adderess}
             onChange={(e) => setAdderess(e.target.value)}
-            pattern="^[A-Za-z0-9\s\,\:\#\-\&]{3,100}$"
+            pattern="^[A-Za-z0-9\s\,\:\#\-\&\/]{3,100}$"
             onInvalid={(e) =>
               e.target.setCustomValidity(
-                "Address can have Alphabets and numbers, Special characters allowed , : # - & whitespace"
+                "Address can have Alphabets and numbers, Special characters allowed are , : # - & / whitespace"
               )
             }
             onInput={(e) => e.target.setCustomValidity("")} // Clear the message once corrected

@@ -21,9 +21,9 @@ const Sidebar = () => {
     <div
       className={`bg-gray-800 min-h-screen my-2 rounded-r-lg flex-1 text-white bg-gradient-to-b from-[#1B223C] via-[#0F1428] to-[#161C34]
     transition-all duration-5000 transform ease-in-out
-    ${showSidebar ? "w-full" : "w-28"}`}
+    ${showSidebar ? "w-full" : "w-20"}`}
     >
-      <div className={`flex gap-1 px-2 pr-8 items-center ${showSidebar ? "pt-1":"py-4 pl-2"}`}>
+      <div className={`flex gap-1 pl-2 pr-6  items-center  ${showSidebar ? "pt-1":"py-4 pl-2 px-0 pr-0"}`}>
         <ShortLogo />
         <h1
           className={`text-xl font-bold pb-6  pt-7 ${
@@ -42,7 +42,7 @@ const Sidebar = () => {
       )}
       <button
         onClick={toggleSidebar}
-        className={`bg-white px-1 py-1 rounded-full fixed top-[50%] ${showSidebar? "left-[84%]" : "left-[69%]" } `}
+        className={`bg-white px-1 py-1 rounded-full fixed top-[50%] ${showSidebar? "left-[84%]" : "left-[57%]" } `}
       >
         {showSidebar ? 
         <img src={SidebarImages.closeSidebarArrow} className="w-6" />
