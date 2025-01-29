@@ -90,7 +90,7 @@ const AllUsers = () => {
           </table>
         </div>
       ) : (
-        <h1>No Data to display</h1>
+        <h1 className="text-center font-semibold text-xl min-h-screen">No Data to display</h1>
       )}
 
       {showDeleteConfirmation && (
