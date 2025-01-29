@@ -19,7 +19,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-gray-800 min-h-screen my-2 rounded-r-lg flex-1 text-white bg-gradient-to-b from-[#1B223C] via-[#0F1428] to-[#161C34]
+      className={`bg-gray-800 min-h-screen h-full  flex-1 text-white bg-gradient-to-b from-[#1B223C] via-[#0F1428] to-[#161C34]
     transition-all duration-5000 transform ease-in-out
     ${showSidebar ? "w-full" : "w-20"}`}
     >

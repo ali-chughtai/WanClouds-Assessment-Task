@@ -5,6 +5,7 @@ import FeedbackMessage from "../../../components/feedbackMessage";
 import { UserRegistrationPageImages } from "../../../assets/images/user/userRegistrationPage/userRegistrationPageImages";
 import MidScreenFloatingDivLayout from "../../../components/midScreenFloatingDivLayout";
 import BackButtonWithCustomPath from "../../../components/backButtonWithCustomPath";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const AddUser = () => {
   const [firstName, setFirstName] = useState("");
@@ -14,6 +15,7 @@ const AddUser = () => {
   const [telephoneNumber, setTelephoneNumber] = useState();
   const [showFeedback, setShowFeedback] = useState(false);
   const [feedback, setFeedback] = useState("");
+  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
@@ -42,6 +44,7 @@ const AddUser = () => {
         setShowFeedback(true);
         setTimeout(() => {
           setShowFeedback(false);
+        navigate("/allusers")
         }, 1500);
 
         setFirstName("");
