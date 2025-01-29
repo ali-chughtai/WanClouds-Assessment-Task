@@ -49,7 +49,7 @@ const AllUsers = () => {
       </div>
 
       {users ? (
-        <div className="overflow-x-scroll rounded-t-lg">
+        <div className="overflow-x-auto rounded-t-lg">
           <table className="min-w-full table-auto border-collapse rounded-t-lg text-xs md:text-md">
             <thead className="bg-[#13192F] text-white rounded-t-lg ">
               <tr className="text-center rounded-t-lg">

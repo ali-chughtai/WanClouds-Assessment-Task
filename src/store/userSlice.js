@@ -33,17 +33,10 @@ export const deleteUser = createAsyncThunk(
     "Users/deleteUser",
     async (index, thunkApi) => {
       try {
-        // Fetch and parse the users array from localStorage
         let usersFromLocalStorage = localStorage.getItem("users");
         usersFromLocalStorage = JSON.parse(usersFromLocalStorage) || [];
-  
-        // Remove the user at the specified index
         usersFromLocalStorage.splice(index, 1);
-  
-        // Update localStorage with the modified array
         localStorage.setItem("users", JSON.stringify(usersFromLocalStorage));
-  
-        // Return the updated array
         return usersFromLocalStorage;
       } catch (e) {
         return thunkApi.rejectWithValue("Cannot delete User");

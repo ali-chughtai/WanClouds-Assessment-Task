@@ -59,7 +59,7 @@ const AddUser = () => {
     const value = e.target.value;
 
     if (/^\d{0,11}$/.test(value) && value >= 0) {
-      setTelephoneNumber(value); // Update the state with the valid number
+      setTelephoneNumber(value); 
     }
   };
 
@@ -95,7 +95,7 @@ const AddUser = () => {
                 "Name can only have Alphabets in range from 3 to 10."
               )
             }
-            onInput={(e) => e.target.setCustomValidity("")} // Clear the message once corrected
+            onInput={(e) => e.target.setCustomValidity("")}
             className="border border-2 border-gray-300 text-black py-2 md:py-3 md:pl-3 rounded-full text-center  md:rounded-lg focus:outline-none focus:ring-1 focus: ring-blue-300"
           />
 
@@ -111,7 +111,7 @@ const AddUser = () => {
                 "Name can only have Alphabets in range from 3 to 10."
               )
             }
-            onInput={(e) => e.target.setCustomValidity("")} // Clear the message once corrected
+            onInput={(e) => e.target.setCustomValidity("")}
             className="border border-2 border-gray-300 text-black py-2 md:py-3 md:pl-3 rounded-full text-center  md:rounded-lg focus:outline-none focus:ring-1 focus: ring-blue-300"
           />
 
@@ -127,7 +127,7 @@ const AddUser = () => {
                 "Address can have Alphabets and numbers, Special characters allowed are , : # - & / whitespace"
               )
             }
-            onInput={(e) => e.target.setCustomValidity("")} // Clear the message once corrected
+            onInput={(e) => e.target.setCustomValidity("")}
             className="col-span-2 border border-2 border-gray-300 text-black py-2 md:py-3 md:pl-3 rounded-full text-center  md:rounded-lg focus:outline-none focus:ring-1 focus: ring-blue-300"
           />
 
@@ -143,7 +143,7 @@ const AddUser = () => {
                 "Company can have Alphabets and numbers, Special characters allowed - ( ) & whitespace"
               )
             }
-            onInput={(e) => e.target.setCustomValidity("")} // Clear the message once corrected
+            onInput={(e) => e.target.setCustomValidity("")}
             className="border border-2 border-gray-300 text-black py-2 md:py-3 md:pl-3 rounded-full text-center  md:rounded-lg focus:outline-none focus:ring-1 focus: ring-blue-300"
           />
 
@@ -158,7 +158,7 @@ const AddUser = () => {
                 "Telephone Number can be of max length: 11 "
               )
             }
-            onInput={(e) => e.target.setCustomValidity("")} // Clear the message once corrected
+            onInput={(e) => e.target.setCustomValidity("")}
             className="border border-2 border-gray-300 text-black py-2 md:py-3 md:pl-3 rounded-full text-center  md:rounded-lg focus:outline-none focus:ring-1 focus: ring-blue-300"
           />
 

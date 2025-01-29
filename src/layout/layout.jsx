@@ -17,7 +17,7 @@ const Layout = () => {
             <div  className=' hidden md:block'>
             <Sidebar/>
             </div>
-            <div className='flex-[4]  '>
+            <div className='flex-[4] overflow-x-auto  '>
             <Outlet/>
             </div>
         </div>
