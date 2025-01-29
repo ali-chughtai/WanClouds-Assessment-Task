@@ -95,7 +95,7 @@ const AddUser = () => {
             pattern="^[A-Za-z\s]{3,10}$"
             onInvalid={(e) =>
               e.target.setCustomValidity(
-                "Name can only have Alphabets in range from 3 to 10."
+                "Name can only have Alphabets in range from 3 to 10 and whitespaces."
               )
             }
             onInput={(e) => e.target.setCustomValidity("")}
@@ -111,7 +111,7 @@ const AddUser = () => {
             pattern="^[A-Za-z\s]{3,10}$"
             onInvalid={(e) =>
               e.target.setCustomValidity(
-                "Name can only have Alphabets in range from 3 to 10."
+                "Name can only have Alphabets in range from 3 to 10 and whitespace."
               )
             }
             onInput={(e) => e.target.setCustomValidity("")}
